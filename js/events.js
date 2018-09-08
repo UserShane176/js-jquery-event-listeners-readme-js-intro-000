@@ -11,10 +11,18 @@ function frameIt(){
   })
 }
 
+function pressIt(){
+  $(document).on('keydown', function(key){
+    if(key.which == '71')
+    alert('you have pressed the G key')
+  })
+}
 
-
-
-
+function submitIt(){
+  $("form").on("submit", function() {
+  alert('your form is going to be submitted now');
+});  
+}
 
 
 $(document).ready(function(){
